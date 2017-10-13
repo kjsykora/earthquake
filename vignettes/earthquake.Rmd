@@ -1,10 +1,10 @@
 ---
-title: "earthquake Package"
+title: "Earthquake Package"
 author: "Kevin Sykora"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{earthquake}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
