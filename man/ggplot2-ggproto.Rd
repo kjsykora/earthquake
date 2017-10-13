@@ -5,7 +5,7 @@
 \alias{StatTimeline}
 \alias{GeomTimeline}
 \alias{GeomTimelineLabel}
-\title{ggproto object for `geom_timeline`}
+\title{ggproto object for \code{geom_timeline}}
 \description{
 This creates the underlying GEOM proto for the timeline geom.
 

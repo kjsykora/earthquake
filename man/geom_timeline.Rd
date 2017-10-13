@@ -66,58 +66,58 @@ to the paired geom/stat.}
 layer, as a string.}
 }
 \description{
-`stat_timeline` is a useful tool for filter operations on timeline geoms
+\code{stat_timeline} is a useful tool for filter operations on timeline geoms
 
-`geom_timeline()` reads in cleaned data and creates timeline plots of earthquakes.
+\code{geom_timeline()} reads in cleaned data and creates timeline plots of earthquakes.
 
-Provides labels for a timeline generated from `geom_timeline()`
-`geom_timelinelabel()` reads in cleaned data and creates labels for the data points
+Provides labels for a timeline generated from \code{geom_timeline()}
+\code{geom_timelinelabel()} reads in cleaned data and creates labels for the data points
 }
 \section{Aesthetics}{
 
-`geom_timeline` understands the following aesthetics (required aesthetics are in bold):
+\code{geom_timeline} understands the following aesthetics (required aesthetics are in bold):
 \itemize{
-  \item \strong{x}
-  \item \strong{xmin}
-  \item \strong{xmax}
-  \item mag
+\item \strong{x}
+\item \strong{xmin}
+\item \strong{xmax}
+\item mag
 }
 
 
-`geom_timeline` understands the following aesthetics (required aesthetics are in bold):
+\code{geom_timeline} understands the following aesthetics (required aesthetics are in bold):
 \itemize{
-  \item \strong{x}
-  \item \strong{xmin}
-  \item \strong{xmax}
-  \item y
-  \item colour
-  \item size
-  \item alpha
-  \item shape
-  \item fill
-  \item stroke
+\item \strong{x}
+\item \strong{xmin}
+\item \strong{xmax}
+\item y
+\item colour
+\item size
+\item alpha
+\item shape
+\item fill
+\item stroke
 }
 
 
-`geom_timelinelabel` understands the following aesthetics (required aesthetics are in bold):
+\code{geom_timelinelabel} understands the following aesthetics (required aesthetics are in bold):
 \itemize{
-  \item \strong{x}
-  \item \strong{label}
-  \item \strong{xmin}
-  \item \strong{xmax}
-  \item y
-  \item mag
-  \item colour
-  \item size
-  \item angle
-  \item hjust
-  \item vjust
-  \item alpha
-  \item family
-  \item fontface
-  \item lineheight
-  \item linesize
-  \item linecolor
+\item \strong{x}
+\item \strong{label}
+\item \strong{xmin}
+\item \strong{xmax}
+\item y
+\item mag
+\item colour
+\item size
+\item angle
+\item hjust
+\item vjust
+\item alpha
+\item family
+\item fontface
+\item lineheight
+\item linesize
+\item linecolor
 }
 }
 
