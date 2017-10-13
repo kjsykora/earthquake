@@ -35,7 +35,8 @@ and removing BCE dates since POSIXlt dates do not work well with pre 1 CE dates.
 }
 \examples{
 \donttest{
-read_delim(file = 'signif.txt', delim = '\\t') \%>\% earthquake::eq_clean_data()
+data(earthquake_raw)
+earthquake_raw \%>\% earthquake::eq_clean_data()
 }
 
 }

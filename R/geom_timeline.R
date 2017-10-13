@@ -119,6 +119,10 @@ geom_timeline <- function(mapping = NULL
   )
 }
 
+#' ggproto object for `geom_timeline`
+#'
+#' This creates the underlying GEOM proto for the timeline geom.
+#'
 #' @rdname ggplot2-ggproto
 #' @format NULL
 #' @usage NULL
@@ -209,7 +213,10 @@ geom_timelinelabel <- function(mapping = NULL
   )
 }
 
-
+#' ggproto object for `geom_timelinelabel`
+#'
+#' This creates the underlying GEOM proto for the timelinelabel geom.
+#'
 #' @rdname ggplot2-ggproto
 #' @format NULL
 #' @usage NULL

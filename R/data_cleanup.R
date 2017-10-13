@@ -33,7 +33,8 @@
 #'
 #' @examples
 #' \donttest{
-#' read_delim(file = 'signif.txt', delim = '\t') %>% earthquake::eq_clean_data()
+#' data(earthquake_raw)
+#' earthquake_raw %>% earthquake::eq_clean_data()
 #' }
 #'
 #' @export
@@ -80,7 +81,8 @@ eq_clean_data <- function(raw_data,
 #'
 #' @examples
 #' \donttest{
-#' read_delim(file = 'signif.txt', delim = '\t') %>% earthquake::eq_location_clean()
+#' data(earthquake_raw)
+#' earthquake_raw %>% earthquake::eq_location_clean()
 #' }
 #'
 #' @export

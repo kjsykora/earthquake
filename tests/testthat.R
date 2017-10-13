@@ -1,5 +1,5 @@
-library("testthat")
+library(testthat)
 
-library("earthquake")
+library(earthquake)
 
 testthat::test_check("earthquake")

@@ -18,7 +18,9 @@ A leaflet plot with annotations.
 This function reads in a dataframe and annotation column and outputs a leaflet plot.
 }
 \examples{
-\donttest{readr::read_delim("earthquakes.tsv.gz", delim = "\\t") \%>\%
+\donttest{
+data(earthquake_raw)
+earthquake_raw \%>\%
 eq_clean_data() \%>\%
 dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
 eq_map(annot_col = "DATE")}

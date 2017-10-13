@@ -17,7 +17,8 @@ Furthermore, it converts the text to title case. WOW, it does soooo much!!!
 }
 \examples{
 \donttest{
-read_delim(file = 'signif.txt', delim = '\\t') \%>\% earthquake::eq_location_clean()
+data(earthquake_raw)
+earthquake_raw \%>\% earthquake::eq_location_clean()
 }
 
 }

@@ -17,7 +17,9 @@ This function reads in a dataframe with LOCATION_NAME, EQ_PRIMARY, and DEATHS as
 It then creates and html tagged annotation for use in the leaflet plots.
 }
 \examples{
-\donttest{readr::read_delim("earthquakes.tsv.gz", delim = "\\t") \%>\%
+\donttest{
+data(earthquake_raw)
+earthquake_raw \%>\%
 eq_clean_data() \%>\%
 dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
 dplyr::mutate(popup_text = eq_create_label(.)) \%>\%
