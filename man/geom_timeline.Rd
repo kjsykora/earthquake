@@ -121,3 +121,36 @@ Provides labels for a timeline generated from \code{geom_timeline()}
 }
 }
 
+\examples{
+\donttest{
+data(earthquake_raw)
+earthquake_clean <- earthquake_raw \%>\%
+eq_clean_data()
+ggplot(data=earthquake_clean \%>\%
+        filter(COUNTRY \%in\% c("CHINA", "USA") ))+
+ geom_timeline(aes(x = DATE, color = log(DEATHS, base = 10), y = COUNTRY,
+                   alpha = 1, xmin=as.Date("2000-01-01"), 
+                   xmax=as.Date("2015-12-31"), size = EQ_PRIMARY)) +
+ scale_color_continuous()+
+ theme_minimal()+theme(legend.position = "bottom")
+}
+
+\donttest{
+data(earthquake_raw)
+earthquake_clean <- earthquake_raw \%>\%
+eq_clean_data()
+ggplot(data=earthquake_clean \%>\%
+         filter(COUNTRY \%in\% c("CHINA", "USA") ))+
+  geom_timelinelabel(aes(x = DATE, label= LOCATION_NAME, y = COUNTRY,
+                         xmin=as.Date("2000-01-01"), 
+                         xmax=as.Date("2015-12-31"), 
+                         mag = EQ_PRIMARY), n_max = 4)+
+  geom_timeline(aes(x = DATE, color = log(DEATHS, base = 10), y = COUNTRY,
+                    alpha = 1, xmin=as.Date("2000-01-01"), 
+                    xmax=as.Date("2015-12-31"),
+                     size = EQ_PRIMARY)) +
+  scale_color_continuous()+
+  theme_minimal()+theme(legend.position = "bottom")
+}
+
+}
