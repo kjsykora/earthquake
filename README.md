@@ -1,4 +1,4 @@
-https://travis-ci.org/kjsykora/earthquake.svg?branch=master
+[![Build Status](https://travis-ci.org/kjsykora/earthquake.svg?branch=master)](https://travis-ci.org/kjsykora/earthquake)
 # earthquake
 
 # overview
